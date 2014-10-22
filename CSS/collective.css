@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'copperplate_gothic_lightRg';
-    src: url('Fonts/copperplate-gothic-light-webfont.eot');
-    src: url('Fonts/copperplate-gothic-light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Fonts/copperplate-gothic-light-webfont.woff2') format('woff2'),
-         url('Fonts/copperplate-gothic-light-webfont.woff') format('woff'),
-         url('Fonts/copperplate-gothic-light-webfont.ttf') format('truetype'),
-         url('Fonts/copperplate-gothic-light-webfont.svg#copperplate_gothic_lightRg') format('svg');
+    src: url('../Fonts/copperplate-gothic-light-webfont.eot');
+    src: url('../Fonts/copperplate-gothic-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../Fonts/copperplate-gothic-light-webfont.woff2') format('woff2'),
+         url('../Fonts/copperplate-gothic-light-webfont.woff') format('woff'),
+         url('../Fonts/copperplate-gothic-light-webfont.ttf') format('truetype'),
+         url('../Fonts/copperplate-gothic-light-webfont.svg#copperplate_gothic_lightRg') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -15,7 +15,7 @@ body
 padding:0px;
 margin:0px;
 background-color: #DCE7F1;/*#7099F4;*/
-font-family: 'copperplate_gothic_lightRg', 'Copperplate Gothic Light', fantasy;
+font-family: 'copperplate_gothic_lightRg', fantasy;
 }
 .navbar
 {
