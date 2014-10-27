@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html class="no-js">
+	<head>
+		<meta charset="utf-8">
+		<title>TJHSST Consulting Club</title>
+		<link rel="stylesheet" type="text/css" href="CSS/collective.css">
+		<link rel="stylesheet" type="text/css" href="CSS/indexStyle.css">
+		<script type="text/javascript" src = "Scripts/collective.js"></script>
+		<script type="text/javascript" src = "Scripts/jquery.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	</head>
+	<body>
+		<div id = "wholePage">
+			<div class = "navbar">
+				<img src="consultingLogo.jpeg" style="max-height:120px;">
+				<div style="color:white; position:absolute;top:0px;right:10px;;font-size:36px;">Jefferson Consulting Club</div>
+				<div id="about" class="navdiv" onmouseover="showMenuBar(this.id)">About Us</div>
+				<div id="project" class="navdiv" onmouseover="showMenuBar(this.id)">Projects</div>
+				<div class="navdiv" style="text-decoration:underline;" onmouseover="hideMenuBar('about');hideMenuBar('project');" onclick="window.open('index.html','_self');">Home</div>
+			</div>
+			<div id = "aboutbar" class="menubar"  onmouseover="keepMenuBar('about')">
+				<div id="founders" class = "menublock" onmouseover="keepMenuBar('about');emphasizeBlock(this.id);" onmouseout="deEmphasizeBlock(this.id)" onclick = "window.open('founders.html','_self')">Founders</div>
+				<div id="officers" class = "menublock" onmouseover="keepMenuBar('about');emphasizeBlock(this.id);" onmouseout="deEmphasizeBlock(this.id)" onclick = "window.open('officers.html','_self')">Officers</div>
+				<div id="whatwedo" class = "menublock" onmouseover="keepMenuBar('about');emphasizeBlock(this.id);" onmouseout="deEmphasizeBlock(this.id)" onclick = "window.open('mission.html','_self')">Our Mission</div>
+			</div> 
+			<div id = "projectbar" class="menubar"  onmouseover="keepMenuBar('project')" >
+				<div id="partners" class = "menublock" onmouseover="keepMenuBar('project');emphasizeBlock(this.id);" onmouseout="deEmphasizeBlock(this.id)" onclick = "window.open('partners.html','_self')">Partners</div>
+				<div id="pastprojects" class = "menublock" onmouseover="keepMenuBar('project');emphasizeBlock(this.id);" onmouseout="deEmphasizeBlock(this.id)" onclick = "window.open('pastprojects.html','_self')">Past Projects</div>
+				<div id="currentprojects" class = "menublock" onmouseover="keepMenuBar('project');emphasizeBlock(this.id);" onmouseout="deEmphasizeBlock(this.id)" onclick = "window.open('currprojects.html','_self')">Current Projects</div>
+			</div> 
+			<div onmouseover="hideMenuBar('project');hideMenuBar('about');">
+			<div class = "maintitle"></div>
+			<div class="news" style="border-top:10px;min-height:0px;">
+			<div  class = "subtitle" >Our Mission</div>
+			</div>
+			<div  style = "position:relative; margin:auto; width:75%; background-color:white;">
+			<div class = "infobox_news" style="width:90%; color:#010243; background-color:white;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque massa tellus, quis cursus mauris fermentum non. Suspendisse volutpat ornare nunc id faucibus. Integer enim nisi, efficitur a commodo vel, volutpat posuere nisl. Proin ultrices purus at diam accumsan vulputate ut in arcu. Nullam fermentum porttitor velit eu consequat. Pellentesque auctor sodales maximus. Aenean nec tellus ac tortor tempor vestibulum porta eu quam. Nunc rhoncus orci non nunc auctor, ac posuere nunc sodales. Nam et sollicitudin diam. Cras vel lacus blandit, convallis nibh id, auctor nunc. Sed ornare posuere lorem, non mattis augue varius vitae. Proin imperdiet luctus ultrices. Proin hendrerit ligula porta turpis ullamcorper gravida. Nunc libero ligula, posuere non congue venenatis, hendrerit nec diam.</div>
+			</div>
+			<div id="bottomBorder" style = "position:relative; margin:auto;padding-bottom:10px;border-bottom: 4px solid #010243; width:75%; background-color:white;"></div>
+			<div style=" width:75%; margin:auto; height:50px; padding-top:10px;">
+			<div style="position:relative; float:left;padding-bottom:30px; font-size:12px; width:40%; color:#010243;"> Designed by Karthik Maiya and Bhuvanesh Murali<br>&copy; 2014 Consulting Club. All Rights Reserved.</div>
+			<i class="fa fa-envelope fa-2x" style = "color:#FF2525; padding-left:20px; float:right;"></i>
+			<i class="fa fa-facebook fa-2x" style = "color:#3B5998; cursor: pointer;float:right;" onclick = "window.open('https://www.facebook.com/groups/551261318272481/')"></i>
+			<span style = "float:right;padding-top:5px; color:#010243">Find us at&nbsp;&nbsp;&nbsp;</span>
+
+			
+			</div>
+			
+		</div>
+		</div>
+	</body>
+</html>
