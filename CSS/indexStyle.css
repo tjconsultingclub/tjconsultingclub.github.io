@@ -1,4 +1,8 @@
 /*Desktop Stylesheet*/
+html
+{
+	font-size: 12px;
+}
 .maintitle
 {
 position:relative;
@@ -9,7 +13,7 @@ color: #010243;
 text-align: center;
 margin:auto;
 border-bottom: 4px solid #010243;
-font-size: 84px;
+font-size: 7em;
 }
 .subtitle
 {
@@ -20,7 +24,7 @@ line-height: 100px;
 color: #010243;
 text-align: center;
 margin:auto;
-font-size: 60px;
+font-size: 5em;
 
 }
 .news
@@ -43,16 +47,23 @@ padding-bottom: 5px;
 min-width: 50%;
 max-width: 50%;
 text-align: center;
-font-size: 36px;
+font-size: 3em;
 display:inline-block;
 }
 .infobox_news_heading
 {
 	position:relative;
 }
+#weekinconsult
+{
+	position:relative; 
+	margin:auto; 
+	width:75%; 
+	background-color:white;
+}
 .infobox_news
 {
-	font-size: 16px;
+	font-size: .46em;
 	text-align: justify;
 	width: 80%;
 	height: auto;
@@ -60,5 +71,96 @@ display:inline-block;
 	position:relative;
 	line-height: 20px;
 }
-
+#bottomBorder
+{
+	position:relative; 
+	margin:auto;
+	padding-bottom:10px;
+	border-bottom: 4px solid #010243; 
+	width:75%; 
+	background-color:white;
+}
+.signature
+{
+	width:75%; 
+	margin:auto; 
+	height:50px; 
+	padding-top:10px;
+}
+.finComments
+{
+	position:relative; 
+	float:left;
+	padding-bottom:30px; 
+	font-size:1em; 
+	width:40%; 
+	color:#010243;
+}
+#missionStatement
+{
+	position:relative;
+	 margin:auto; 
+	 width:75%; 
+	 background-color:white;
+}
+#projectname
+{
+	font-size:3.333em;
+	min-height:50px;
+	max-height:50px;
+	line-height:50px;
+}
+#projectsub
+{
+	text-align:left;
+	font-size:1.6666em;
+	min-width:40%;
+	margin:auto;
+}
 /*End Desktop Stylesheet*/
+
+@media only screen and (max-width: 900px){
+	.maintitle,.subtitle, .news, #weekinconsult, #bottomBorder, .signature, #missionStatement
+	{
+		width:95%;
+	}
+}
+@media only screen and (max-width: 767px){
+	.subnews
+	{
+		float: none !important; 
+		box-shadow:none !important;
+		min-width: 95%;
+		max-width: 95%;
+		padding-bottom: 20px;
+		min-height: 0px !important;
+	}
+}
+@media only screen and (max-width: 600px){
+	html
+	{
+		font-size: 10px;
+	}
+}
+@media only screen and (max-width: 500px){
+	html
+	{
+		font-size: 7px;
+	}
+	.infobox_news
+{
+	font-size: .7em;
+	width: 90%;
+
+}
+}
+@media only screen and (max-width: 355px){
+.subtitle
+{
+	font-size: 4em;
+}
+#projectname
+{
+	font-size: 3em;
+}
+}

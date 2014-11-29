@@ -2,6 +2,7 @@
 <html class="no-js">
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>TJHSST Consulting Club</title>
 		<link rel="stylesheet" type="text/css" href="CSS/collective.css">
 		<link rel="stylesheet" type="text/css" href="CSS/indexStyle.css">
@@ -21,14 +22,30 @@
 </script>
 	</head>
 	<body>
-		<div id = "wholePage">
-			<div class = "navbar">
-				<img src="Images/consultingLogo.jpeg" style="max-height:120px;">
-				<div style="color:white; position:absolute;top:0px;right:10px;;font-size:36px;">Jefferson Consulting Club</div>
+		<div class="slideBar" id="slideBar">
+		<div class="sideSub" style="text-align:right; font-size:1.95em;" onclick = "window.open('index.html','_self')" id="partner" onmouseover="highlightSideBar(this.id)" onmouseout="unlightSideBar(this.id)"><span style = "padding-left:20px; padding-right:20px;">Home</span></div>
+			<div class="sideHeader"><span style = "padding-left:20px; padding-right:20px;">Projects</span>
+			<div class="sideSub" onclick = "window.open('partners.html','_self')" id="partner" onmouseover="highlightSideBar(this.id)" onmouseout="unlightSideBar(this.id)"><span style = "padding-left:20px; padding-right:20px;">Partners</span></div>
+			<div class="sideSub" onclick = "window.open('pastprojects.html','_self')" id="past" onmouseover="highlightSideBar(this.id)" onmouseout="unlightSideBar(this.id)"><span style = "padding-left:20px; padding-right:20px;">Past Projects</span></div>
+			<div class="sideSub" onclick = "window.open('currprojects.html','_self')" id="curr" onmouseover="highlightSideBar(this.id)" onmouseout="unlightSideBar(this.id)"><span style = "padding-left:20px; padding-right:20px;">Current Projects</span></div>
+			</div>
+
+			<div class="sideHeader"><span style = "padding-left:20px; padding-right:20px;">About Us</span>
+			<div class="sideSub" onclick = "window.open('founders.html','_self')" id="founder" onmouseover="highlightSideBar(this.id)" onmouseout="unlightSideBar(this.id)"><span style = "padding-left:20px; padding-right:20px;">Founders</span></div>
+			<div class="sideSub" onclick = "window.open('officers.html','_self')" id="officer" onmouseover="highlightSideBar(this.id)" onmouseout="unlightSideBar(this.id)"><span style = "padding-left:20px; padding-right:20px;">Officers</span></div>
+			<div class="sideSub" onclick = "window.open('mission.html','_self')" id="mission" onmouseover="highlightSideBar(this.id)" onmouseout="unlightSideBar(this.id)"><span style = "padding-left:20px; padding-right:20px;">Our Mission</span></div>
+			</div>
+		</div>
+		<div class = "navbar">
+				<img src="Images/consultingLogo.jpeg" id="logo">
+				<div id="topLabel">Jefferson Consulting Club</div>
+				<i class="fa fa-bars" id="bars" onclick="showSlideBar()"></i>
 				<div id="about" class="navdiv" onmouseover="showMenuBar(this.id)">About Us</div>
 				<div id="project" class="navdiv" onmouseover="showMenuBar(this.id)">Projects</div>
 				<div class="navdiv" style="text-decoration:underline;" onmouseover="hideMenuBar('about');hideMenuBar('project');" onclick="window.open('index.html','_self');">Home</div>
 			</div>
+		<div id = "wholePage" style="position:absolute;z-index:0;" onclick="hideSlideBar()">
+			<div id=""></div>
 			<div id = "aboutbar" class="menubar"  onmouseover="keepMenuBar('about')">
 				<div id="founders" class = "menublock" onmouseover="keepMenuBar('about');emphasizeBlock(this.id);" onmouseout="deEmphasizeBlock(this.id)" onclick = "window.open('founders.html','_self')">Founders</div>
 				<div id="officers" class = "menublock" onmouseover="keepMenuBar('about');emphasizeBlock(this.id);" onmouseout="deEmphasizeBlock(this.id)" onclick = "window.open('officers.html','_self')">Officers</div>
@@ -46,23 +63,21 @@
 				<div class = "subnews" style="float:left;box-shadow:min-height:200px;">
 					<span class = "infobox_news_heading" >General</span>
 					<br>
-					<p class = "infobox_news">A new year for TJ Consulting has begun. Many new changes have come. Along with new leadership in Chris, Aneesh, Andrew, and Celine, this website has been rolled out.<br>Website will get updated weekly with all the news and information the club members by 11/12/2014. Full functionality (email ,polling, etc.) is coming soon.</p>
+					<p class = "infobox_news">A new year for TJ Consulting has begun. Many new changes have come. Along with new leadership in Chris, Aneesh, Andrew, and Celine, this website has been rolled out. Website will get updated weekly with all the news and information the club members by 11/12/2014. Full functionality (email ,polling, etc.) is coming soon.</p>
 				</div>
 				<div class = "subnews" style="float:right;  box-shadow: inset 2px 0px 0px #010243;min-height:200px;">
 					<span class = "infobox_news_heading">Upcoming</span>
 					<br>
-					<p class = "infobox_news" style="text-align:center">
-						No Meeting Next Week
-					</p>
+					<p class = "infobox_news">This week the JCIRN beta testing project, TJ Diversity Initiative, and Student Communication project will begin. Also coming soon will be the t-shirt design project once more. </p>
 				</div>
 			</div>
-			<div  style = "position:relative; margin:auto; width:75%; background-color:white;">
+			<div  id="weekinconsult">
 			<div class = "subtitle" style="min-height:60px;line-height:60px; width:100%;font-size:36px; background-color:white;">This Week in Consulting</div>
-			<p class = "infobox_news" style="width:90%; color:#010243; background-color:white; text-align:center">Worked on Student Diversity Initiative<br>Worked on JCIRN Beta Testing</p>
+			<p class = "infobox_news" style="width:90%; color:#010243; background-color:white;font-size:1.333em;" id="weekinConsulting">Worked on Projects</p>
 			</div>
-			<div id="bottomBorder" style = "position:relative; margin:auto;padding-bottom:10px;border-bottom: 4px solid #010243; width:75%; background-color:white;"></div>
-			<div style=" width:75%; margin:auto; height:50px; padding-top:10px;">
-			<div style="position:relative; float:left;padding-bottom:30px; font-size:12px; width:40%; color:#010243;"> Designed by Karthik Maiya and Bhuvanesh Murali<br>&copy; 2014 Consulting Club. All Rights Reserved.</div>
+			<div id="bottomBorder"></div>
+			<div class="signature">
+			<div class = "finComments"> Designed by Karthik Maiya and Bhuvanesh Murali<br>&copy; 2014 Consulting Club. All Rights Reserved.</div>
 			<i class="fa fa-envelope fa-2x" style = "color:#FF2525; padding-left:20px; float:right;"></i>
 			<i class="fa fa-facebook fa-2x" style = "color:#3B5998; cursor: pointer;float:right;" onclick = "window.open('https://www.facebook.com/groups/551261318272481/')"></i>
 			<span style = "float:right;padding-top:5px; color:#010243">Find us at&nbsp;&nbsp;&nbsp;</span>
