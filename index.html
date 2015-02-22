@@ -44,7 +44,7 @@
 				<div id="project" class="navdiv" onmouseover="showMenuBar(this.id)">Projects</div>
 				<div class="navdiv" style="text-decoration:underline;" onmouseover="hideMenuBar('about');hideMenuBar('project');" onclick="window.open('index.html','_self');">Home</div>
 			</div>
-		<div id = "wholePage" style="position:absolute;z-index:0;" onclick="hideSlideBar()">
+		<div id = "wholePage" style="position:absolute;z-index:0;min-width:100%" onclick="hideSlideBar()">
 			<div id=""></div>
 			<div id = "aboutbar" class="menubar"  onmouseover="keepMenuBar('about')">
 				<div id="founders" class = "menublock" onmouseover="keepMenuBar('about');emphasizeBlock(this.id);" onmouseout="deEmphasizeBlock(this.id)" onclick = "window.open('founders.html','_self')">Founders</div>
